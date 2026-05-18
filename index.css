@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-bg: #F4F2EE;
+    --color-surface: #FFFFFF;
+    --color-surface-alt: #F9F8F6;
+    --color-text: #2E2A26;
+    --color-text-secondary: #8A847E;
+    --color-accent: #7A5C58;
+    --color-accent-light: #E8DED8;
+    --color-success: #5B7A5B;
+    --color-success-light: #DDE8DD;
+    --color-error: #A05C5C;
+    --color-error-light: #E8D5D5;
+    --color-warning: #B8964A;
+    --color-warning-light: #F5EDD8;
+    --background: 40 20% 95%;
+    --foreground: 30 10% 17%;
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 17%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 17%;
+    --primary: 10 19% 41%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 40 20% 95%;
+    --secondary-foreground: 30 10% 17%;
+    --muted: 40 10% 90%;
+    --muted-foreground: 30 5% 52%;
+    --accent: 40 20% 95%;
+    --accent-foreground: 30 10% 17%;
+    --destructive: 0 30% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 40 15% 90%;
+    --input: 40 15% 90%;
+    --ring: 10 19% 41%;
+    --radius: 0.75rem;
+  }
+
+  * {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+
+  body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    overscroll-behavior: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
